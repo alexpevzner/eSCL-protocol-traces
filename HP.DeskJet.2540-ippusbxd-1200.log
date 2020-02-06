@@ -1,0 +1,246 @@
+00:00:00.023: "eSCL Scanner on USB via ippusbxd": device created
+00:00:01.024: "eSCL Scanner on USB via ippusbxd": HTTP GET http://localhost:60000/eSCL/ScannerCapabilities
+00:00:01.335: "eSCL Scanner on USB via ippusbxd": HTTP GET http://localhost:60000/eSCL/ScannerCapabilities: OK
+==============================
+GET http://localhost:60000/eSCL/ScannerCapabilities
+Host: localhost:60000
+Connection: close
+Accept-Encoding: gzip, deflate
+
+Status: 200 OK
+Server: HP HTTP Server; HP Deskjet 2540 series - A9U24A; Serial Number: BR54BFB02C05XK; Built:Fri Mar 29, 2013 11:06:03AM {CEP1FN1313CR}
+Content-Type: text/xml
+Content-Encoding: gzip
+Content-Length: 1023
+Cache-Control: must-revalidate, max-age=0
+Pragma: no-cache
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!---->
+<scan:ScannerCapabilities xmlns:scan="http://schemas.hp.com/imaging/escl/2011/05/03" xmlns:pwg="http://www.pwg.org/schemas/2010/12/sm" xmlns:dest="http://schemas.hp.com/imaging/destination/2011/06/06" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.hp.com/imaging/escl/2011/05/03 ../../schemas/eSCL-1_92.xsd">
+	<pwg:Version>2.0</pwg:Version>
+	<pwg:MakeAndModel>xxxx</pwg:MakeAndModel>
+	<pwg:SerialNumber>25</pwg:SerialNumber>
+	<scan:Platen>
+		<scan:PlatenInputCaps>
+			<scan:MinWidth>8</scan:MinWidth>
+			<scan:MaxWidth>2550</scan:MaxWidth>
+			<scan:MinHeight>8</scan:MinHeight>
+			<scan:MaxHeight>3508</scan:MaxHeight>
+			<scan:MaxScanRegions>1</scan:MaxScanRegions>
+			<scan:SettingProfiles>
+				<scan:SettingProfile>
+					<scan:ColorModes>
+						<scan:ColorMode>Grayscale8</scan:ColorMode>
+						<scan:ColorMode>RGB24</scan:ColorMode>
+					</scan:ColorModes>
+					<scan:ContentTypes>
+						<pwg:ContentType>Photo</pwg:ContentType>
+						<pwg:ContentType>Text</pwg:ContentType>
+						<pwg:ContentType>TextAndPhoto</pwg:ContentType>
+					</scan:ContentTypes>
+					<scan:DocumentFormats>
+						<pwg:DocumentFormat>application/octet-stream</pwg:DocumentFormat>
+						<pwg:DocumentFormat>image/jpeg</pwg:DocumentFormat>
+						<pwg:DocumentFormat>application/pdf</pwg:DocumentFormat>
+					</scan:DocumentFormats>
+					<scan:SupportedResolutions>
+						<scan:DiscreteResolutions>
+							<scan:DiscreteResolution>
+								<scan:XResolution>75</scan:XResolution>
+								<scan:YResolution>75</scan:YResolution>
+							</scan:DiscreteResolution>
+							<scan:DiscreteResolution>
+								<scan:XResolution>100</scan:XResolution>
+								<scan:YResolution>100</scan:YResolution>
+							</scan:DiscreteResolution>
+							<scan:DiscreteResolution>
+								<scan:XResolution>200</scan:XResolution>
+								<scan:YResolution>200</scan:YResolution>
+							</scan:DiscreteResolution>
+							<scan:DiscreteResolution>
+								<scan:XResolution>300</scan:XResolution>
+								<scan:YResolution>300</scan:YResolution>
+							</scan:DiscreteResolution>
+							<scan:DiscreteResolution>
+								<scan:XResolution>600</scan:XResolution>
+								<scan:YResolution>600</scan:YResolution>
+							</scan:DiscreteResolution>
+							<scan:DiscreteResolution>
+								<scan:XResolution>1200</scan:XResolution>
+								<scan:YResolution>1200</scan:YResolution>
+							</scan:DiscreteResolution>
+							<scan:DiscreteResolution>
+								<scan:XResolution>2400</scan:XResolution>
+								<scan:YResolution>2400</scan:YResolution>
+							</scan:DiscreteResolution>
+						</scan:DiscreteResolutions>
+					</scan:SupportedResolutions>
+					<scan:ColorSpaces>
+						<scan:ColorSpace>YCC</scan:ColorSpace>
+						<scan:ColorSpace>RGB</scan:ColorSpace>
+						<scan:ColorSpace>sRGB</scan:ColorSpace>
+					</scan:ColorSpaces>
+				</scan:SettingProfile>
+			</scan:SettingProfiles>
+			<scan:SupportedIntents>
+				<scan:Intent>Document</scan:Intent>
+				<scan:Intent>Photo</scan:Intent>
+				<scan:Intent>Preview</scan:Intent>
+				<scan:Intent>TextAndGraphic</scan:Intent>
+			</scan:SupportedIntents>
+			<scan:MaxOpticalXResolution>2400</scan:MaxOpticalXResolution>
+			<scan:MaxOpticalYResolution>2400</scan:MaxOpticalYResolution>
+			<scan:RiskyLeftMargin>34</scan:RiskyLeftMargin>
+			<scan:RiskyRightMargin>33</scan:RiskyRightMargin>
+			<scan:RiskyTopMargin>34</scan:RiskyTopMargin>
+			<scan:RiskyBottomMargin>46</scan:RiskyBottomMargin>
+		</scan:PlatenInputCaps>
+	</scan:Platen>
+	<scan:BrightnessSupport>
+		<scan:Min>0</scan:Min>
+		<scan:Max>2000</scan:Max>
+		<scan:Step>1</scan:Step>
+	</scan:BrightnessSupport>
+	<scan:ContrastSupport>
+		<scan:Min>0</scan:Min>
+		<scan:Max>2000</scan:Max>
+		<scan:Step>1</scan:Step>
+	</scan:ContrastSupport>
+	<scan:HighlightSupport>
+		<scan:Min>0</scan:Min>
+		<scan:Max>255</scan:Max>
+		<scan:Normal>179</scan:Normal>
+		<scan:Step>1</scan:Step>
+	</scan:HighlightSupport>
+	<scan:ShadowSupport>
+		<scan:Min>0</scan:Min>
+		<scan:Max>255</scan:Max>
+		<scan:Normal>25</scan:Normal>
+		<scan:Step>1</scan:Step>
+	</scan:ShadowSupport>
+	<scan:SharpenSupport>
+		<scan:Min>0</scan:Min>
+		<scan:Max>255</scan:Max>
+		<scan:Step>1</scan:Step>
+	</scan:SharpenSupport>
+	<scan:ThresholdSupport>
+		<scan:Min>0</scan:Min>
+		<scan:Max>255</scan:Max>
+		<scan:Normal>128</scan:Normal>
+		<scan:Step>1</scan:Step>
+	</scan:ThresholdSupport>
+</scan:ScannerCapabilities>
+
+===== device capabilities =====
+  Model:   "xxxx"
+  Vendor:  "AirScan"
+  Sources: Flatbed
+
+  Flatbed:
+    Min window:  8x8 px, 0.68x0.68 mm
+    Max window:  2550x3508 px, 215.90x297.01 mm
+    Resolutions: 75 100 200 300 600 1200 2400
+    Color modes: Color, Gray
+
+00:00:42.608: "eSCL Scanner on USB via ippusbxd": sane_open("eSCL Scanner on USB via ippusbxd"): Success
+00:00:42.609: "eSCL Scanner on USB via ippusbxd": sane_start()
+00:00:42.609: "eSCL Scanner on USB via ippusbxd": state=SCAN_STARTED
+==============================
+Starting scan, using the following parameters:
+  source:         Platen
+  colormode:      RGB24
+  tl_x:           0 mm
+  tl_y:           0 mm
+  br_x:           215.90 mm
+  br_y:           297.01 mm
+  image size:     2550x3508
+  image X offset: 0
+  image Y offset: 0
+  x_resolution:   2400
+  y_resolution:   2400
+  image format:   image/jpeg
+  duplex:         false
+
+00:00:42.609: "eSCL Scanner on USB via ippusbxd": state=SCAN_REQUESTING
+00:00:43.610: "eSCL Scanner on USB via ippusbxd": HTTP POST http://localhost:60000/eSCL/ScanJobs
+00:00:43.913: "eSCL Scanner on USB via ippusbxd": HTTP POST http://localhost:60000/eSCL/ScanJobs: Created
+==============================
+POST http://localhost:60000/eSCL/ScanJobs
+Content-Type: text/xml
+Host: localhost:60000
+Connection: close
+Accept-Encoding: gzip, deflate
+Content-Length: 756
+
+<?xml version="1.0" encoding="UTF-8"?>
+<scan:ScanSettings xmlns:pwg="http://www.pwg.org/schemas/2010/12/sm" xmlns:scan="http://schemas.hp.com/imaging/escl/2011/05/03">
+  <pwg:Version>2.0</pwg:Version>
+  <pwg:ScanRegions>
+    <pwg:ScanRegion>
+      <pwg:ContentRegionUnits>escl:ThreeHundredthsOfInches</pwg:ContentRegionUnits>
+      <pwg:XOffset>0</pwg:XOffset>
+      <pwg:YOffset>0</pwg:YOffset>
+      <pwg:Width>2550</pwg:Width>
+      <pwg:Height>3508</pwg:Height>
+    </pwg:ScanRegion>
+  </pwg:ScanRegions>
+  <pwg:InputSource>Platen</pwg:InputSource>
+  <scan:ColorMode>RGB24</scan:ColorMode>
+  <pwg:DocumentFormat>image/jpeg</pwg:DocumentFormat>
+  <scan:XResolution>2400</scan:XResolution>
+  <scan:YResolution>2400</scan:YResolution>
+</scan:ScanSettings>
+
+Status: 201 Created
+Server: HP HTTP Server; HP Deskjet 2540 series - A9U24A; Serial Number: BR54BFB02C05XK; Built:Fri Mar 29, 2013 11:06:03AM {CEP1FN1313CR}
+Location: http://BR54BFB02C05XK.03f011c2.hpLedmUSB/eSCL/ScanJobs/1cacda24-6154-1f09-84f6-5cb901e7ddc7
+Content-Length: 0
+Cache-Control: must-revalidate, max-age=0
+Pragma: no-cache
+
+00:00:43.913: "eSCL Scanner on USB via ippusbxd": state=SCAN_LOADING
+00:00:44.914: "eSCL Scanner on USB via ippusbxd": HTTP GET http://localhost:60000/eSCL/ScanJobs/1cacda24-6154-1f09-84f6-5cb901e7ddc7/NextDocument
+00:09:21.522: "eSCL Scanner on USB via ippusbxd": HTTP GET http://localhost:60000/eSCL/ScanJobs/1cacda24-6154-1f09-84f6-5cb901e7ddc7/NextDocument: OK
+==============================
+GET http://localhost:60000/eSCL/ScanJobs/1cacda24-6154-1f09-84f6-5cb901e7ddc7/NextDocument
+Host: localhost:60000
+Connection: close
+Accept-Encoding: gzip, deflate
+
+Status: 200 OK
+Server: HP HTTP Server; HP Deskjet 2540 series - A9U24A; Serial Number: BR54BFB02C05XK; Built:Fri Mar 29, 2013 11:06:03AM {CEP1FN1313CR}
+Content-Type: image/jpeg
+Cache-Control: max-age=180
+Transfer-Encoding: chunked
+
+68602101 bytes of data saved as 00000002.jpeg
+
+==============================
+Starting image decoding, image parameters are:
+  content type:   image/jpeg
+  frame format:   RGB
+  image size:     20400x28064
+  color depth:    8
+
+00:09:21.561: "eSCL Scanner on USB via ippusbxd": state=SCAN_CLEANING_UP
+00:09:22.561: "eSCL Scanner on USB via ippusbxd": HTTP DELETE http://localhost:60000/eSCL/ScanJobs/1cacda24-6154-1f09-84f6-5cb901e7ddc7
+00:09:22.670: "eSCL Scanner on USB via ippusbxd": HTTP DELETE http://localhost:60000/eSCL/ScanJobs/1cacda24-6154-1f09-84f6-5cb901e7ddc7: Not Found
+==============================
+DELETE http://localhost:60000/eSCL/ScanJobs/1cacda24-6154-1f09-84f6-5cb901e7ddc7
+Host: localhost:60000
+Connection: close
+Accept-Encoding: gzip, deflate
+
+Status: 404 Not Found
+Server: HP HTTP Server; HP Deskjet 2540 series - A9U24A; Serial Number: BR54BFB02C05XK; Built:Fri Mar 29, 2013 11:06:03AM {CEP1FN1313CR}
+Content-Length: 0
+Cache-Control: must-revalidate, max-age=0
+Pragma: no-cache
+
+00:09:22.670: "eSCL Scanner on USB via ippusbxd": state=SCAN_DONE
+00:09:25.102: "eSCL Scanner on USB via ippusbxd": sane_read(): End of file reached
+00:09:25.102: "eSCL Scanner on USB via ippusbxd": cancel requested
+00:59:02.303: "eSCL Scanner on USB via ippusbxd": sane_close()
+00:59:02.303: "eSCL Scanner on USB via ippusbxd": cancel requested
+00:59:02.303: "eSCL Scanner on USB via ippusbxd": removed from device table

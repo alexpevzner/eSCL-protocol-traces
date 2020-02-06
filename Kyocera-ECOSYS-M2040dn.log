@@ -1,0 +1,351 @@
+00:00:00.099: "Kyocera MFP Scanner": device created
+00:00:00.100: "Kyocera MFP Scanner": HTTP GET http://192.168.1.102:9095/eSCL/ScannerCapabilities
+00:00:00.146: "Kyocera MFP Scanner": HTTP GET http://192.168.1.102:9095/eSCL/ScannerCapabilities: OK
+==============================
+GET http://192.168.1.102:9095/eSCL/ScannerCapabilities
+Host: 192.168.1.102:9095
+Connection: close
+Accept-Encoding: gzip, deflate
+
+Status: 200 OK
+Content-Length: 9257
+Upgrade: TLS/1.0
+Accept-Encoding: identity
+Date: Fri, 03 Jan 2020 18:36:00 GMT
+Server: KM-MFP-http/V0.0.1
+Content-Type: text/xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<scan:ScannerCapabilities
+xmlns:scan="http://schemas.hp.com/imaging/escl/2011/05/03"
+xmlns:pwg="http://www.pwg.org/schemas/2010/12/sm">
+  <pwg:Version>2.62</pwg:Version>
+  <pwg:MakeAndModel>Kyocera ECOSYS M2040dn</pwg:MakeAndModel>
+  <pwg:SerialNumber>VCF9192281</pwg:SerialNumber>
+  <pwg:ModelName>ECOSYS M2040dn</pwg:ModelName>
+  <scan:UUID>4509a320-00a0-008f-00b6-002507510eca</scan:UUID>
+  <scan:AdminURI>https://KM7B6A91.local/airprint</scan:AdminURI>
+  <scan:IconURI>https://KM7B6A91.local/printer-icon/machine_128.png</scan:IconURI>
+  <scan:Platen>
+    <scan:PlatenInputCaps>
+      <scan:MinWidth>118</scan:MinWidth>
+      <scan:MaxWidth>2551</scan:MaxWidth>
+      <scan:MinHeight>118</scan:MinHeight>
+      <scan:MaxHeight>3508</scan:MaxHeight>
+      <scan:SettingProfiles>
+        <scan:SettingProfile>
+          <scan:ColorModes>
+            <scan:ColorMode>BlackAndWhite1</scan:ColorMode>
+            <scan:ColorMode>Grayscale8</scan:ColorMode>
+            <scan:ColorMode>RGB24</scan:ColorMode>
+          </scan:ColorModes>
+          <scan:DocumentFormats>
+            <pwg:DocumentFormat>image/jpeg</pwg:DocumentFormat>
+            <pwg:DocumentFormat>application/pdf</pwg:DocumentFormat>
+          </scan:DocumentFormats>
+          <scan:SupportedResolutions>
+            <scan:DiscreteResolutions>
+              <scan:DiscreteResolution>
+                <scan:XResolution>200</scan:XResolution>
+                <scan:YResolution>100</scan:YResolution>
+              </scan:DiscreteResolution>
+              <scan:DiscreteResolution>
+                <scan:XResolution>200</scan:XResolution>
+                <scan:YResolution>200</scan:YResolution>
+              </scan:DiscreteResolution>
+              <scan:DiscreteResolution>
+                <scan:XResolution>200</scan:XResolution>
+                <scan:YResolution>400</scan:YResolution>
+              </scan:DiscreteResolution>
+              <scan:DiscreteResolution>
+                <scan:XResolution>300</scan:XResolution>
+                <scan:YResolution>300</scan:YResolution>
+              </scan:DiscreteResolution>
+              <scan:DiscreteResolution>
+                <scan:XResolution>400</scan:XResolution>
+                <scan:YResolution>400</scan:YResolution>
+              </scan:DiscreteResolution>
+              <scan:DiscreteResolution>
+                <scan:XResolution>600</scan:XResolution>
+                <scan:YResolution>600</scan:YResolution>
+              </scan:DiscreteResolution>
+            </scan:DiscreteResolutions>
+          </scan:SupportedResolutions>
+        </scan:SettingProfile>
+      </scan:SettingProfiles>
+      <scan:SupportedIntents>
+        <scan:SupportedIntent>Document</scan:SupportedIntent>
+        <scan:SupportedIntent>TextAndGraphic</scan:SupportedIntent>
+        <scan:SupportedIntent>Photo</scan:SupportedIntent>
+        <scan:SupportedIntent>Preview</scan:SupportedIntent>
+      </scan:SupportedIntents>
+      <scan:FeedDirections>
+        <scan:FeedDirection>ShortEdgeFeed</scan:FeedDirection>
+        <scan:FeedDirection>LongEdgeFeed</scan:FeedDirection>
+      </scan:FeedDirections>
+    </scan:PlatenInputCaps>
+  </scan:Platen>
+  <scan:Adf>
+    <scan:AdfSimplexInputCaps>
+      <scan:MinWidth>591</scan:MinWidth>
+      <scan:MaxWidth>2551</scan:MaxWidth>
+      <scan:MinHeight>591</scan:MinHeight>
+      <scan:MaxHeight>4205</scan:MaxHeight>
+      <scan:SettingProfiles>
+        <scan:SettingProfile>
+          <scan:ColorModes>
+            <scan:ColorMode>BlackAndWhite1</scan:ColorMode>
+            <scan:ColorMode>Grayscale8</scan:ColorMode>
+            <scan:ColorMode>RGB24</scan:ColorMode>
+          </scan:ColorModes>
+          <scan:DocumentFormats>
+            <pwg:DocumentFormat>image/jpeg</pwg:DocumentFormat>
+            <pwg:DocumentFormat>application/pdf</pwg:DocumentFormat>
+          </scan:DocumentFormats>
+          <scan:SupportedResolutions>
+            <scan:DiscreteResolutions>
+              <scan:DiscreteResolution>
+                <scan:XResolution>200</scan:XResolution>
+                <scan:YResolution>100</scan:YResolution>
+              </scan:DiscreteResolution>
+              <scan:DiscreteResolution>
+                <scan:XResolution>200</scan:XResolution>
+                <scan:YResolution>200</scan:YResolution>
+              </scan:DiscreteResolution>
+              <scan:DiscreteResolution>
+                <scan:XResolution>200</scan:XResolution>
+                <scan:YResolution>400</scan:YResolution>
+              </scan:DiscreteResolution>
+              <scan:DiscreteResolution>
+                <scan:XResolution>300</scan:XResolution>
+                <scan:YResolution>300</scan:YResolution>
+              </scan:DiscreteResolution>
+              <scan:DiscreteResolution>
+                <scan:XResolution>400</scan:XResolution>
+                <scan:YResolution>400</scan:YResolution>
+              </scan:DiscreteResolution>
+              <scan:DiscreteResolution>
+                <scan:XResolution>600</scan:XResolution>
+                <scan:YResolution>600</scan:YResolution>
+              </scan:DiscreteResolution>
+            </scan:DiscreteResolutions>
+          </scan:SupportedResolutions>
+        </scan:SettingProfile>
+      </scan:SettingProfiles>
+      <scan:SupportedIntents>
+        <scan:SupportedIntent>Document</scan:SupportedIntent>
+        <scan:SupportedIntent>TextAndGraphic</scan:SupportedIntent>
+        <scan:SupportedIntent>Photo</scan:SupportedIntent>
+        <scan:SupportedIntent>Preview</scan:SupportedIntent>
+      </scan:SupportedIntents>
+      <scan:FeedDirections>
+        <scan:FeedDirections>ShortEdgeFeed</scan:FeedDirections>
+        <scan:FeedDirections>LongEdgeFeed</scan:FeedDirections>
+      </scan:FeedDirections>
+    </scan:AdfSimplexInputCaps>
+    <scan:AdfDuplexInputCaps>
+      <scan:MinWidth>591</scan:MinWidth>
+      <scan:MaxWidth>2551</scan:MaxWidth>
+      <scan:MinHeight>591</scan:MinHeight>
+      <scan:MaxHeight>4205</scan:MaxHeight>
+      <scan:SettingProfiles>
+        <scan:SettingProfile>
+          <scan:ColorModes>
+            <scan:ColorMode>BlackAndWhite1</scan:ColorMode>
+            <scan:ColorMode>Grayscale8</scan:ColorMode>
+            <scan:ColorMode>RGB24</scan:ColorMode>
+          </scan:ColorModes>
+          <scan:DocumentFormats>
+            <pwg:DocumentFormat>image/jpeg</pwg:DocumentFormat>
+            <pwg:DocumentFormat>application/pdf</pwg:DocumentFormat>
+          </scan:DocumentFormats>
+          <scan:SupportedResolutions>
+            <scan:DiscreteResolutions>
+              <scan:DiscreteResolution>
+                <scan:XResolution>200</scan:XResolution>
+                <scan:YResolution>100</scan:YResolution>
+              </scan:DiscreteResolution>
+              <scan:DiscreteResolution>
+                <scan:XResolution>200</scan:XResolution>
+                <scan:YResolution>200</scan:YResolution>
+              </scan:DiscreteResolution>
+              <scan:DiscreteResolution>
+                <scan:XResolution>200</scan:XResolution>
+                <scan:YResolution>400</scan:YResolution>
+              </scan:DiscreteResolution>
+              <scan:DiscreteResolution>
+                <scan:XResolution>300</scan:XResolution>
+                <scan:YResolution>300</scan:YResolution>
+              </scan:DiscreteResolution>
+              <scan:DiscreteResolution>
+                <scan:XResolution>400</scan:XResolution>
+                <scan:YResolution>400</scan:YResolution>
+              </scan:DiscreteResolution>
+              <scan:DiscreteResolution>
+                <scan:XResolution>600</scan:XResolution>
+                <scan:YResolution>600</scan:YResolution>
+              </scan:DiscreteResolution>
+            </scan:DiscreteResolutions>
+          </scan:SupportedResolutions>
+        </scan:SettingProfile>
+      </scan:SettingProfiles>
+      <scan:SupportedIntents>
+        <scan:SupportedIntent>Document</scan:SupportedIntent>
+        <scan:SupportedIntent>TextAndGraphic</scan:SupportedIntent>
+        <scan:SupportedIntent>Photo</scan:SupportedIntent>
+        <scan:SupportedIntent>Preview</scan:SupportedIntent>
+      </scan:SupportedIntents>
+      <scan:FeedDirections>
+        <scan:FeedDirection>ShortEdgeFeed</scan:FeedDirection>
+        <scan:FeedDirection>LongEdgeFeed</scan:FeedDirection>
+      </scan:FeedDirections>
+    </scan:AdfDuplexInputCaps>
+    <scan:FeederCapacity>75</scan:FeederCapacity>
+    <scan:AdfOptions>
+      <scan:AdfOption>DetectPaperLoaded</scan:AdfOption>
+      <scan:AdfOption>SelectSinglePage</scan:AdfOption>
+      <scan:AdfOption>Duplex</scan:AdfOption>
+    </scan:AdfOptions>
+  </scan:Adf>
+  <scan:CompressionFactorSupport>
+    <scan:Min>1</scan:Min>
+    <scan:Max>5</scan:Max>
+    <scan:Normal>1</scan:Normal>
+    <scan:Step>1</scan:Step>
+  </scan:CompressionFactorSupport>
+  <scan:SharpenSupport>
+    <scan:Min>-3</scan:Min>
+    <scan:Max>3</scan:Max>
+    <scan:Normal>0</scan:Normal>
+    <scan:Step>1</scan:Step>
+  </scan:SharpenSupport>
+</scan:ScannerCapabilities>
+
+===== device capabilities =====
+  Model:   "ECOSYS M2040dn"
+  Vendor:  "Kyocera"
+  Sources: Flatbed, ADF, ADF Duplex
+
+  Flatbed:
+    Min window:  118x118 px, 9.99x9.99 mm
+    Max window:  2551x3508 px, 215.98x297.01 mm
+    Resolutions: 200 300 400 600
+    Color modes: Color, Gray
+
+  ADF:
+    Min window:  591x591 px, 50.04x50.04 mm
+    Max window:  2551x4205 px, 215.98x356.02 mm
+    Resolutions: 200 300 400 600
+    Color modes: Color, Gray
+
+  ADF Duplex:
+    Min window:  591x591 px, 50.04x50.04 mm
+    Max window:  2551x4205 px, 215.98x356.02 mm
+    Resolutions: 200 300 400 600
+    Color modes: Color, Gray
+
+00:00:01.008: "Kyocera MFP Scanner": sane_open(""): Success
+00:00:01.008: "Kyocera MFP Scanner": sane_start()
+00:00:01.008: "Kyocera MFP Scanner": state=SCAN_STARTED
+==============================
+Starting scan, using the following parameters:
+  source:         Platen
+  colormode:      RGB24
+  tl_x:           0 mm
+  tl_y:           0 mm
+  br_x:           215.98 mm
+  br_y:           297.01 mm
+  image size:     2551x3508
+  image X offset: 0
+  image Y offset: 0
+  x_resolution:   300
+  y_resolution:   300
+  image format:   image/jpeg
+  duplex:         false
+
+00:00:01.008: "Kyocera MFP Scanner": state=SCAN_REQUESTING
+00:00:01.008: "Kyocera MFP Scanner": HTTP POST http://192.168.1.102:9095/eSCL/ScanJobs
+00:00:01.629: "Kyocera MFP Scanner": HTTP POST http://192.168.1.102:9095/eSCL/ScanJobs: Created
+==============================
+POST http://192.168.1.102:9095/eSCL/ScanJobs
+Content-Type: text/xml
+Host: 192.168.1.102:9095
+Connection: close
+Accept-Encoding: gzip, deflate
+Content-Length: 754
+
+<?xml version="1.0" encoding="UTF-8"?>
+<scan:ScanSettings xmlns:pwg="http://www.pwg.org/schemas/2010/12/sm" xmlns:scan="http://schemas.hp.com/imaging/escl/2011/05/03">
+  <pwg:Version>2.0</pwg:Version>
+  <pwg:ScanRegions>
+    <pwg:ScanRegion>
+      <pwg:ContentRegionUnits>escl:ThreeHundredthsOfInches</pwg:ContentRegionUnits>
+      <pwg:XOffset>0</pwg:XOffset>
+      <pwg:YOffset>0</pwg:YOffset>
+      <pwg:Width>2551</pwg:Width>
+      <pwg:Height>3508</pwg:Height>
+    </pwg:ScanRegion>
+  </pwg:ScanRegions>
+  <pwg:InputSource>Platen</pwg:InputSource>
+  <scan:ColorMode>RGB24</scan:ColorMode>
+  <pwg:DocumentFormat>image/jpeg</pwg:DocumentFormat>
+  <scan:XResolution>300</scan:XResolution>
+  <scan:YResolution>300</scan:YResolution>
+</scan:ScanSettings>
+
+Status: 201 Created
+Content-Length: 0
+Upgrade: TLS/1.0
+Accept-Encoding: identity
+Date: Fri, 03 Jan 2020 18:36:01 GMT
+Server: KM-MFP-http/V0.0.1
+Location: http://192.168.1.102:9095/eSCL/ScanJobs/urn:uuid:4509a320-00a0-008f-00b6-0055c940a421
+
+00:00:01.630: "Kyocera MFP Scanner": state=SCAN_LOADING
+00:00:01.630: "Kyocera MFP Scanner": HTTP GET http://192.168.1.102:9095/eSCL/ScanJobs/urn:uuid:4509a320-00a0-008f-00b6-0055c940a421/NextDocument
+00:00:12.710: "Kyocera MFP Scanner": HTTP GET http://192.168.1.102:9095/eSCL/ScanJobs/urn:uuid:4509a320-00a0-008f-00b6-0055c940a421/NextDocument: OK
+==============================
+GET http://192.168.1.102:9095/eSCL/ScanJobs/urn:uuid:4509a320-00a0-008f-00b6-0055c940a421/NextDocument
+Host: 192.168.1.102:9095
+Connection: close
+Accept-Encoding: gzip, deflate
+
+Status: 200 OK
+Upgrade: TLS/1.0
+Accept-Encoding: identity
+Date: Fri, 03 Jan 2020 18:36:06 GMT
+Server: KM-MFP-http/V0.0.1
+Content-Type: image/jpeg
+Transfer-Encoding: chunked
+Content-Location: /eSCL/ScanJobs/urn:uuid:4509a320-00a0-008f-00b6-0055c940a421/doc
+Accept-Ranges: bytes
+
+399974 bytes of data saved as 00000002.jpeg
+
+==============================
+Starting image decoding, image parameters are:
+  content type:   image/jpeg
+  frame format:   RGB
+  image size:     2550x3507
+  color depth:    8
+
+00:00:12.712: "Kyocera MFP Scanner": state=SCAN_CLEANING_UP
+00:00:12.712: "Kyocera MFP Scanner": HTTP DELETE http://192.168.1.102:9095/eSCL/ScanJobs/urn:uuid:4509a320-00a0-008f-00b6-0055c940a421
+00:00:12.867: "Kyocera MFP Scanner": HTTP DELETE http://192.168.1.102:9095/eSCL/ScanJobs/urn:uuid:4509a320-00a0-008f-00b6-0055c940a421: OK
+==============================
+DELETE http://192.168.1.102:9095/eSCL/ScanJobs/urn:uuid:4509a320-00a0-008f-00b6-0055c940a421
+Host: 192.168.1.102:9095
+Connection: close
+Accept-Encoding: gzip, deflate
+
+Status: 200 OK
+Content-Length: 0
+Upgrade: TLS/1.0
+Accept-Encoding: identity
+Date: Fri, 03 Jan 2020 18:36:12 GMT
+Server: KM-MFP-http/V0.0.1
+
+00:00:12.867: "Kyocera MFP Scanner": state=SCAN_DONE
+00:00:12.921: "Kyocera MFP Scanner": sane_read(): End of file reached
+00:00:12.921: "Kyocera MFP Scanner": sane_close()
+00:00:12.921: "Kyocera MFP Scanner": removed from device table

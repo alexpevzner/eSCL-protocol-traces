@@ -1,0 +1,158 @@
+00:00:00.276: "Canon D570": device created
+00:00:00.277: "Canon D570": HTTP GET http://192.168.0.4/eSCL/ScannerCapabilities
+00:00:00.343: "Canon D570": HTTP GET http://192.168.0.4/eSCL/ScannerCapabilities: OK
+==============================
+GET http://192.168.0.4/eSCL/ScannerCapabilities
+Host: 192.168.0.4
+Connection: close
+Accept-Encoding: gzip, deflate
+
+Status: 200 OK
+Content-Type: text/xml
+Content-Length: 2100
+Connection: close
+
+<?xml version="1.0" encoding="UTF-8"?>
+<scan:ScannerCapabilities xmlns:scan="http://schemas.hp.com/imaging/escl/2011/05/03" xmlns:pwg="http://www.pwg.org/schemas/2010/12/sm">
+<pwg:Version>2.62</pwg:Version>
+<pwg:MakeAndModel>CND570</pwg:MakeAndModel>
+<pwg:SerialNumber>WQL19155</pwg:SerialNumber>
+<scan:UUID>01c80000-fe7f-11de-8a39-74bfc0200d3b</scan:UUID>
+<scan:AdminURI>http://Canon200d3b.local/airprint.html</scan:AdminURI>
+<scan:IconURI>http://Canon200d3b.local/media/platen_128x128.png</scan:IconURI>
+<scan:Platen>
+<scan:PlatenInputCaps>
+<scan:MinWidth>1</scan:MinWidth>
+<scan:MaxWidth>2550</scan:MaxWidth>
+<scan:MinHeight>1</scan:MinHeight>
+<scan:MaxHeight>3508</scan:MaxHeight>
+<scan:MaxScanRegions>1</scan:MaxScanRegions>
+<scan:SettingProfiles>
+<scan:SettingProfile>
+<scan:ColorModes>
+<scan:ColorMode>Grayscale8</scan:ColorMode>
+<scan:ColorMode>RGB24</scan:ColorMode>
+</scan:ColorModes>
+<scan:DocumentFormats>
+<pwg:DocumentFormat>image/jpeg</pwg:DocumentFormat>
+<pwg:DocumentFormat>application/pdf</pwg:DocumentFormat>
+<scan:DocumentFormatExt>image/jpeg</scan:DocumentFormatExt>
+<scan:DocumentFormatExt>application/pdf</scan:DocumentFormatExt>
+</scan:DocumentFormats>
+<scan:SupportedResolutions>
+<scan:DiscreteResolutions>
+<scan:DiscreteResolution>
+<scan:XResolution>75</scan:XResolution>
+<scan:YResolution>75</scan:YResolution>
+</scan:DiscreteResolution>
+<scan:DiscreteResolution>
+<scan:XResolution>150</scan:XResolution>
+<scan:YResolution>150</scan:YResolution>
+</scan:DiscreteResolution>
+<scan:DiscreteResolution>
+<scan:XResolution>300</scan:XResolution>
+<scan:YResolution>300</scan:YResolution>
+</scan:DiscreteResolution>
+</scan:DiscreteResolutions>
+</scan:SupportedResolutions>
+</scan:SettingProfile>
+</scan:SettingProfiles>
+<scan:SupportedIntents>
+<scan:Intent>Document</scan:Intent>
+<scan:Intent>TextAndGraphic</scan:Intent>
+<scan:Intent>Photo</scan:Intent>
+<scan:Intent>Preview</scan:Intent>
+</scan:SupportedIntents>
+<scan:FeedDirections>
+<scan:FeedDirection>ShortEdgeFeed</scan:FeedDirection>
+</scan:FeedDirections>
+</scan:PlatenInputCaps>
+</scan:Platen>
+</scan:ScannerCapabilities>
+
+===== device capabilities =====
+  Model:   "CND570"
+  Vendor:  "AirScan"
+  Sources: Flatbed
+
+  Flatbed:
+    Min window:  1x1 px, 0.08x0.08 mm
+    Max window:  2550x3508 px, 215.90x297.01 mm
+    Resolutions: 75 150 300
+    Color modes: Color, Gray
+
+00:00:02.003: "Canon D570": sane_open("Canon D570"): Success
+00:00:02.004: "Canon D570": sane_start()
+00:00:02.004: "Canon D570": state=SCAN_STARTED
+==============================
+Starting scan, using the following parameters:
+  source:         Platen
+  colormode:      RGB24
+  tl_x:           0 mm
+  tl_y:           0 mm
+  br_x:           215.90 mm
+  br_y:           297.01 mm
+  image size:     2550x3508
+  image X offset: 0
+  image Y offset: 0
+  x_resolution:   300
+  y_resolution:   300
+  image format:   image/jpeg
+  duplex:         false
+
+00:00:02.005: "Canon D570": state=SCAN_REQUESTING
+00:00:02.005: "Canon D570": HTTP POST http://192.168.0.4/eSCL/ScanJobs
+00:00:02.501: "Canon D570": HTTP GET http://192.168.0.4/eSCL/ScanJobs: Created
+==============================
+GET http://192.168.0.4/eSCL/ScanJobs
+Host: 192.168.0.4
+Connection: close
+Accept-Encoding: gzip, deflate
+
+Status: 201 Created
+Location: http://192.168.0.4/eSCL/ScanJobs/375f7b68-2da0-11ea-8a39-74bfc0200d3b
+Content-Length: 0
+Connection: close
+
+00:00:02.501: "Canon D570": state=SCAN_LOADING
+00:00:02.501: "Canon D570": HTTP GET http://192.168.0.4/eSCL/ScanJobs/375f7b68-2da0-11ea-8a39-74bfc0200d3b/NextDocument
+00:00:10.879: "Canon D570": HTTP GET http://192.168.0.4/eSCL/ScanJobs/375f7b68-2da0-11ea-8a39-74bfc0200d3b/NextDocument: OK
+==============================
+GET http://192.168.0.4/eSCL/ScanJobs/375f7b68-2da0-11ea-8a39-74bfc0200d3b/NextDocument
+Host: 192.168.0.4
+Connection: close
+Accept-Encoding: gzip, deflate
+
+Status: 200 OK
+Content-Type: image/jpeg
+Transfer-Encoding: chunked
+Connection: close
+
+1784813 bytes of data saved as 00000002.jpeg
+
+==============================
+Starting image decoding, image parameters are:
+  content type:   image/jpeg
+  frame format:   RGB
+  image size:     2550x3508
+  color depth:    8
+
+00:00:10.884: "Canon D570": state=SCAN_CLEANING_UP
+00:00:10.884: "Canon D570": HTTP DELETE http://192.168.0.4/eSCL/ScanJobs/375f7b68-2da0-11ea-8a39-74bfc0200d3b
+00:00:10.911: "Canon D570": HTTP DELETE http://192.168.0.4/eSCL/ScanJobs/375f7b68-2da0-11ea-8a39-74bfc0200d3b: Moved Permanently
+==============================
+DELETE http://192.168.0.4/eSCL/ScanJobs/375f7b68-2da0-11ea-8a39-74bfc0200d3b
+Host: 192.168.0.4
+Connection: close
+Accept-Encoding: gzip, deflate
+
+Status: 301 Moved Permanently
+Location: https://192.168.0.4:443/eSCL/ScanJobs/375f7b68-2da0-11ea-8a39-74bfc0200d3b
+Connection: close
+
+00:00:10.911: "Canon D570": state=SCAN_DONE
+00:00:11.123: "Canon D570": sane_read(): End of file reached
+00:00:11.123: "Canon D570": cancel requested
+00:00:33.178: "Canon D570": sane_close()
+00:00:33.178: "Canon D570": cancel requested
+00:00:33.178: "Canon D570": removed from device table
